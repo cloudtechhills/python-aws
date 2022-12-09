@@ -1,0 +1,244 @@
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7f488ab79160>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7f488ab7d9d0>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "transla", "SourceLanguageCode": "en", "TargetLanguageCode": "ru"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7f488aaa0f40>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f488aaa0e20>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7f488ab79040>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20220413T101818Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+dfbbff6998ed0e6c05c8d539210fb357eba2db02d9ce9eacc5bfb2f98f9e916e
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20220413T101818Z
+20220413/us-east-1/translate/aws4_request
+dc0347f795e3a262926ab35ee76f2956ec3d65dabb480e0d312544dc60d27460
+DEBUG:botocore.auth:Signature:
+0a5b4cc078b0f51d72800a80ac7a55a2a4bd3c45516d792e37cb784ddda87da5
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20220413T101818Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20220413/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=0a5b4cc078b0f51d72800a80ac7a55a2a4bd3c45516d792e37cb784ddda87da5', 'Content-Length': '75'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 93
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '37c62715-7e09-42d2-ad31-824698f9e682', 'Cache-Control': 'no-cache', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '93', 'Date': 'Wed, 13 Apr 2022 10:15:09 GMT'}
+DEBUG:botocore.parsers:Response body:
+b'{"SourceLanguageCode":"en","TargetLanguageCode":"ru","TranslatedText":"\xd0\xbf\xd0\xb5\xd1\x80\xd0\xb5\xd0\xb2\xd0\xbe\xd0\xb4\xd0\xb8\xd1\x82\xd1\x8c"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7f488a99c910>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7fadd3636820>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7fadd363c0d0>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "I must be SUCCESSFUL!!!", "SourceLanguageCode": "en", "TargetLanguageCode": "in"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fadd3438370>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fadd3438250>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7fadd3636700>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T214653Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+989b275e327512287eeefbb614eba8982daabf2da14f92f082e4c70be6dd3c61
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T214653Z
+20221209/us-east-1/translate/aws4_request
+1b49e381d47a28967b7396a9fec4ae2007465f4be75695d39ee7c42fb4d3beca
+DEBUG:botocore.auth:Signature:
+d719e5bfb7fbdc215fa97d8ae0ea276a85409e59ac921a357d080122311c5eaf
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T214653Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=d719e5bfb7fbdc215fa97d8ae0ea276a85409e59ac921a357d080122311c5eaf', 'Content-Length': '91'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 400 184
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'ee4398c8-43f9-43c0-806f-740a7141ed83', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '184', 'Date': 'Fri, 09 Dec 2022 21:42:05 GMT', 'Connection': 'close'}
+DEBUG:botocore.parsers:Response body:
+b'{"__type":"UnsupportedLanguagePairException","Message":"Unsupported language pair: en to in. Target language \'in\' is not supported","SourceLanguageCode":"en","TargetLanguageCode":"in"}'
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'ee4398c8-43f9-43c0-806f-740a7141ed83', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '184', 'Date': 'Fri, 09 Dec 2022 21:42:05 GMT', 'Connection': 'close'}
+DEBUG:botocore.parsers:Response body:
+b'{"__type":"UnsupportedLanguagePairException","Message":"Unsupported language pair: en to in. Target language \'in\' is not supported","SourceLanguageCode":"en","TargetLanguageCode":"in"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7fadd3438d00>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7f4d372a5820>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7f4d372ac0d0>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "Family Over Everything", "SourceLanguageCode": "en", "TargetLanguageCode": "ch"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7f4d370a8370>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f4d370a8250>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7f4d372a5700>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T214715Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+1f4790ae4a7f497abe47bd2c68c44e3d268d331a20ee44147a784cc0571da860
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T214715Z
+20221209/us-east-1/translate/aws4_request
+8193a0270c7f1502533c95565c321795fdc1aee348fa2ba36c41e7fc444420b1
+DEBUG:botocore.auth:Signature:
+13e47706c318fd2d4c4c248321140afeb82c89efdbe37ef3d169fdd7d65ed501
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T214715Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=13e47706c318fd2d4c4c248321140afeb82c89efdbe37ef3d169fdd7d65ed501', 'Content-Length': '90'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 400 184
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'f51ef19f-b739-45d6-a01f-9a8274569692', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '184', 'Date': 'Fri, 09 Dec 2022 21:42:27 GMT', 'Connection': 'close'}
+DEBUG:botocore.parsers:Response body:
+b'{"__type":"UnsupportedLanguagePairException","Message":"Unsupported language pair: en to ch. Target language \'ch\' is not supported","SourceLanguageCode":"en","TargetLanguageCode":"ch"}'
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'f51ef19f-b739-45d6-a01f-9a8274569692', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '184', 'Date': 'Fri, 09 Dec 2022 21:42:27 GMT', 'Connection': 'close'}
+DEBUG:botocore.parsers:Response body:
+b'{"__type":"UnsupportedLanguagePairException","Message":"Unsupported language pair: en to ch. Target language \'ch\' is not supported","SourceLanguageCode":"en","TargetLanguageCode":"ch"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7f4d370a8d00>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7ffdddd06820>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7ffdddd0d0d0>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "Famil Over Everything", "SourceLanguageCode": "en", "TargetLanguageCode": "fr"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7ffdddb08370>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7ffdddb08250>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7ffdddd06700>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T214730Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+e28a83530b20cca2f2c7de5e550e4ced513f54ea108e7aa287fdc4283fcb513d
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T214730Z
+20221209/us-east-1/translate/aws4_request
+2a59d83abb852319790e603f885bae9dd68507d2fd77d14975977bdc447371ec
+DEBUG:botocore.auth:Signature:
+90c0b3efba74905e112fe2977e1a3ce60e55f2eba082a4d73292c8879885ec0b
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T214730Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=90c0b3efba74905e112fe2977e1a3ce60e55f2eba082a4d73292c8879885ec0b', 'Content-Length': '89'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 94
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'd0d7e80a-ac59-4367-bad8-619ec34593b2', 'Cache-Control': 'no-cache', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '94', 'Date': 'Fri, 09 Dec 2022 21:42:43 GMT'}
+DEBUG:botocore.parsers:Response body:
+b'{"SourceLanguageCode":"en","TargetLanguageCode":"fr","TranslatedText":"La famille avant tout"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7ffdddb08d00>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7f5923176820>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7f592317c0d0>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "family over everything", "SourceLanguageCode": "en", "TargetLanguageCode": "it"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7f5922f78370>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f5922f78250>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7f5923176700>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T214758Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+18d49c650a2bab522d83a19a2c1583f65613ed36a0ed467b5523666025656d4c
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T214758Z
+20221209/us-east-1/translate/aws4_request
+1787cc227946469f1e0295b90a157d6f3c3ec080b25ec8ea1708fb751a34bdfa
+DEBUG:botocore.auth:Signature:
+33a5947cc6f68573546cf43d7cb994fa407d8e0e8312c495ec5f74b8573536bd
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T214758Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=33a5947cc6f68573546cf43d7cb994fa407d8e0e8312c495ec5f74b8573536bd', 'Content-Length': '90'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 96
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': 'd3a94e5e-20df-41ec-b894-3c84016fee21', 'Cache-Control': 'no-cache', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '96', 'Date': 'Fri, 09 Dec 2022 21:43:11 GMT'}
+DEBUG:botocore.parsers:Response body:
+b'{"SourceLanguageCode":"en","TargetLanguageCode":"it","TranslatedText":"la famiglia sopra tutto"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7f5922f78d00>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7fb578496790>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7fb57849c040>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "We made it", "SourceLanguageCode": "en", "TargetLanguageCode": "ru"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7fb5782983a0>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7fb578298280>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7fb578496670>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T215040Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+e649d0160f101c5d3251732f6c10a118e89e1f5f40c53bf6d74ed7342bfca0d7
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T215040Z
+20221209/us-east-1/translate/aws4_request
+492f5aef3caad5577811ebb867ee21e35ba56c9fdf25599a4a315acda0f690e0
+DEBUG:botocore.auth:Signature:
+2f5b9aa47d5ff6facccda786c639c1708b679c3e64d570e98c68c811021321b8
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T215040Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=2f5b9aa47d5ff6facccda786c639c1708b679c3e64d570e98c68c811021321b8', 'Content-Length': '78'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 103
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '8a0b2b2b-b833-4266-a2a4-7e4ee3219a04', 'Cache-Control': 'no-cache', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '103', 'Date': 'Fri, 09 Dec 2022 21:45:52 GMT'}
+DEBUG:botocore.parsers:Response body:
+b'{"SourceLanguageCode":"en","TargetLanguageCode":"ru","TranslatedText":"\xd0\xa3 \xd0\xbd\xd0\xb0\xd1\x81 \xd0\xbf\xd0\xbe\xd0\xbb\xd1\x83\xd1\x87\xd0\xb8\xd0\xbb\xd0\xbe\xd1\x81\xd1\x8c"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7fb578298d30>
+DEBUG:botocore.retryhandler:No retry needed.
+INFO:root:The Source Language and Target Language codes are different - proceeding
+DEBUG:botocore.hooks:Event before-parameter-build.translate.TranslateText: calling handler <function generate_idempotent_uuid at 0x7f3234906790>
+DEBUG:botocore.hooks:Event before-call.translate.TranslateText: calling handler <function inject_api_version_header_if_needed at 0x7f323490c040>
+DEBUG:botocore.endpoint:Making request for OperationModel(name=TranslateText) with params: {'url_path': '/', 'query_string': '', 'method': 'POST', 'headers': {'X-Amz-Target': 'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': 'application/x-amz-json-1.1', 'User-Agent': 'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12'}, 'body': b'{"Text": "hello world", "SourceLanguageCode": "en", "TargetLanguageCode": "fr"}', 'url': 'https://translate.us-east-1.amazonaws.com/', 'context': {'client_region': 'us-east-1', 'client_config': <botocore.config.Config object at 0x7f32347083d0>, 'has_streaming_input': False, 'auth_type': None}}
+DEBUG:botocore.hooks:Event request-created.translate.TranslateText: calling handler <bound method RequestSigner.handler of <botocore.signers.RequestSigner object at 0x7f32347082b0>>
+DEBUG:botocore.hooks:Event choose-signer.translate.TranslateText: calling handler <function set_operation_specific_signer at 0x7f3234906670>
+DEBUG:botocore.auth:Calculating signature using v4 auth.
+DEBUG:botocore.auth:CanonicalRequest:
+POST
+/
+
+content-type:application/x-amz-json-1.1
+host:translate.us-east-1.amazonaws.com
+x-amz-date:20221209T215143Z
+x-amz-target:AWSShineFrontendService_20170701.TranslateText
+
+content-type;host;x-amz-date;x-amz-target
+af942e69a962aae0b0aaf5e612b1fd91c0a8d3707a992cd8b77b347323f91e88
+DEBUG:botocore.auth:StringToSign:
+AWS4-HMAC-SHA256
+20221209T215143Z
+20221209/us-east-1/translate/aws4_request
+5d4ae78d24c6f3e88690d070daf13a7fd8d207bc6de839b142a81816c1503c8a
+DEBUG:botocore.auth:Signature:
+e62d04b748e56d98e7701aa6145d3fb167c04a2c384d18f735659958bc2db668
+DEBUG:botocore.endpoint:Sending http request: <AWSPreparedRequest stream_output=False, method=POST, url=https://translate.us-east-1.amazonaws.com/, headers={'X-Amz-Target': b'AWSShineFrontendService_20170701.TranslateText', 'Content-Type': b'application/x-amz-json-1.1', 'User-Agent': b'Boto3/1.20.12 Python/3.9.9 Linux/4.4.0-19041-Microsoft Botocore/1.23.12', 'X-Amz-Date': b'20221209T215143Z', 'Authorization': b'AWS4-HMAC-SHA256 Credential=AKIAVZFQ7ICUITX2MNY5/20221209/us-east-1/translate/aws4_request, SignedHeaders=content-type;host;x-amz-date;x-amz-target, Signature=e62d04b748e56d98e7701aa6145d3fb167c04a2c384d18f735659958bc2db668', 'Content-Length': '79'}>
+DEBUG:botocore.httpsession:Certificate path: /usr/local/lib/python3.9/dist-packages/certifi/cacert.pem
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): translate.us-east-1.amazonaws.com:443
+DEBUG:urllib3.connectionpool:https://translate.us-east-1.amazonaws.com:443 "POST / HTTP/1.1" 200 89
+DEBUG:botocore.parsers:Response headers: {'x-amzn-RequestId': '3d7e9e9c-76d5-48b6-b54a-798fd7cd63d9', 'Cache-Control': 'no-cache', 'Content-Type': 'application/x-amz-json-1.1', 'Content-Length': '89', 'Date': 'Fri, 09 Dec 2022 21:46:54 GMT'}
+DEBUG:botocore.parsers:Response body:
+b'{"SourceLanguageCode":"en","TargetLanguageCode":"fr","TranslatedText":"bonjour le monde"}'
+DEBUG:botocore.hooks:Event needs-retry.translate.TranslateText: calling handler <botocore.retryhandler.RetryHandler object at 0x7f3234708d60>
+DEBUG:botocore.retryhandler:No retry needed.

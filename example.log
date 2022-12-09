@@ -1,0 +1,22 @@
+DEBUG:root:This is a Debug Message
+WARNING:root:THis is a Warning Message!
+INFO:root:THis is an Info Message
+ERROR:root:This is an Error Message
+2022-04-12 17:08:54,903 :: DEBUG :: This is a Debug Message
+2022-04-12 17:08:54,920 :: WARNING :: THis is a Warning Message!
+2022-04-12 17:08:54,920 :: INFO :: THis is an Info Message
+2022-04-12 17:08:54,920 :: ERROR :: This is an Error Message
+2022-04-12 17:09:59,333 :: DEBUG :: This is a Debug Message :: root 
+2022-04-12 17:09:59,333 :: WARNING :: THis is a Warning Message! :: root 
+2022-04-12 17:09:59,333 :: INFO :: THis is an Info Message :: root 
+2022-04-12 17:09:59,333 :: ERROR :: This is an Error Message :: root 
+2022-04-12 17:10:32,876 :: DEBUG :: This is a Debug Message :: log-files.py 
+2022-04-12 17:10:32,877 :: WARNING :: THis is a Warning Message! :: log-files.py 
+2022-04-12 17:10:32,877 :: INFO :: THis is an Info Message :: log-files.py 
+2022-04-12 17:10:32,877 :: ERROR :: This is an Error Message :: log-files.py 
+2022-04-12 17:11:38,286 :: DEBUG :: This is a Debug Message :: log-files.py :: 1649779898.286873
+2022-04-12 17:11:38,420 :: WARNING :: THis is a Warning Message! :: log-files.py :: 1649779898.420964
+2022-04-12 17:11:38,421 :: INFO :: THis is an Info Message :: log-files.py :: 1649779898.4213474
+2022-04-12 17:11:38,421 :: ERROR :: This is an Error Message :: log-files.py :: 1649779898.4215918
+INFO:root:Login Successful
+INFO:root:The Source Language and Target Language codes are different - proceeding

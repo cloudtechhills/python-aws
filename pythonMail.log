@@ -1,0 +1,13 @@
+INFO:root:Login Successful
+INFO:root:Mail Successful
+INFO:root:Login Successful
+INFO:root:Mail was sent successfully
+INFO:root:Login Successful
+INFO:root:Mail was sent successfully
+2022-04-13 17:16:19,711 :: INFO :: Login Successful :: send_email.py :: 1649866579.7111862
+2022-04-13 17:16:20,550 :: INFO :: Mail was sent successfully :: send_email.py :: 1649866580.5509267
+2022-04-13 18:43:47,131 :: ERROR :: Exception Error occured (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials au9-20020a170907092900b006e8985cc68asm197660ejc.1 - gsmtp') :: send_email.py :: 1649871827.1316082
+2022-04-13 18:45:32,614 :: INFO :: Login Successful :: send_email.py :: 1649871932.614952
+2022-04-13 18:45:33,771 :: INFO :: Mail was sent successfully :: send_email.py :: 1649871933.7717862
+2022-12-06 11:40:41,687 :: ERROR :: Exception Error occured (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials f18-20020a05600c4e9200b003c6c182bef9sm34079212wmq.36 - gsmtp') :: send_email.py :: 1670326841.6871464
+2022-12-09 21:31:04,570 :: ERROR :: Exception Error occured (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials t16-20020a5d42d0000000b0023659925b2asm2290274wrr.51 - gsmtp') :: send_email.py :: 1670621464.570057
